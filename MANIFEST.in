@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include siteshare *.css
+recursive-include siteshare *.csv
+recursive-include siteshare *.html
+recursive-include siteshare *.ico
+recursive-include siteshare *.js
+recursive-include siteshare *.json
+recursive-include siteshare *.md
+recursive-include siteshare *.png
+recursive-include siteshare *.py
+recursive-include siteshare *.svg
+recursive-include siteshare *.txt
+recursive-exclude siteshare *.pyc
