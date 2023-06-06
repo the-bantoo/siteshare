@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-06-06 14:17:25.604665",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "team_member",
+  "column_break_lvslq",
+  "role",
+  "column_break_clglu",
+  "active"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "team_member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Team Member",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_lvslq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 3,
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Role",
+   "options": "Role Profile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_clglu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Active",
+   "print_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-06 14:17:25.604665",
+ "modified_by": "Administrator",
+ "module": "Site Share",
+ "name": "Company Team",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

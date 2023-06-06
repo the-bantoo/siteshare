@@ -1,0 +1,36 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"JJPXWeKPyz\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">General Settings</span>\",\"col\":12}},{\"id\":\"NhxaUmUxdR\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"TJqTfaTenI\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Company Settings\",\"col\":3}}]",
+ "creation": "2023-06-06 14:29:51.505816",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "setting-gear",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "General Settings",
+ "links": [],
+ "modified": "2023-06-06 15:59:51.420812",
+ "modified_by": "Administrator",
+ "module": "Site Share",
+ "name": "General Settings",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 32.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Company Settings",
+   "link_to": "Company Settings",
+   "type": "DocType"
+  }
+ ],
+ "title": "General Settings"
+}

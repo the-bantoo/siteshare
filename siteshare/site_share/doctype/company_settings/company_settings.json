@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{company}",
+ "creation": "2023-06-06 13:32:47.818114",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "team_section",
+  "team",
+  "livestock_section",
+  "livestock",
+  "address_tab",
+  "address_section",
+  "address",
+  "address_2",
+  "city",
+  "column_break_eoxlx",
+  "country",
+  "company_details_tab",
+  "taxes_section",
+  "tax_bracket"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "no_copy": 1,
+   "options": "Company",
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "livestock_section",
+   "fieldtype": "Tab Break",
+   "label": "Livestock"
+  },
+  {
+   "fieldname": "livestock",
+   "fieldtype": "Table MultiSelect",
+   "label": "Livestock",
+   "options": "Company Livestock Options",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Taxes"
+  },
+  {
+   "fieldname": "taxes_section",
+   "fieldtype": "Section Break",
+   "label": "Taxes"
+  },
+  {
+   "fieldname": "tax_bracket",
+   "fieldtype": "Link",
+   "label": "Tax Bracket",
+   "options": "Sales Taxes and Charges Template"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "address_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City/Town"
+  },
+  {
+   "fetch_from": "company.country",
+   "fetch_if_empty": 1,
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "address_tab",
+   "fieldtype": "Tab Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_eoxlx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Manage your team and give them appropriate permissions so that they can use Fabric",
+   "fieldname": "team_section",
+   "fieldtype": "Section Break",
+   "label": "Team"
+  },
+  {
+   "fieldname": "team",
+   "fieldtype": "Table",
+   "label": "Team Members",
+   "options": "Company Team"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-06 14:17:33.567659",
+ "modified_by": "Administrator",
+ "module": "Site Share",
+ "name": "Company Settings",
+ "name_case": "Title Case",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Farm Owner",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Agriculture Manager"
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture User"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
